@@ -1,0 +1,820 @@
+﻿
+body {
+    font-family: 'SimSun', SimSun;
+}
+.container-fluid {
+    max-width: 1600px;
+}
+.container_wapper {
+    width: 100%;
+    background: #c0c0c0;
+}
+.rcolor {
+    background: #f00;
+}
+.gcolor {
+    background: #0f0;
+}
+.bcolor {
+    background: #00f;
+}
+h1 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    font: normal normal normal 34px/60px 'SimSun', SimSun;
+    color: #3b3b3b;
+}
+
+#templatemo_banner_menu {
+    width: 100%;
+    background: #ffffff;
+    height: 94px;
+    border-bottom: 1px solid #f15556;
+    position: fixed;
+    top: 0;
+    z-index: 5000;
+}
+
+
+#templatemo_banner_menu ul li a ,
+#templatemo_banner_menu ul li a:focus {
+    padding-top: 35px;
+    padding-bottom: 33px;
+    padding-left:0px;
+    font: normal normal normal 18px/23px 'SimSun', SimSun;
+    color:black;
+    background-color: white;
+/*    background: repeat-x url("../images/banner_bg.jpg") 0 -94px ;
+    transition-duration: .5s;*/
+}
+#templatemo_banner_menu ul li a:hover ,
+#templatemo_banner_menu ul li a.current
+{
+    background-position: 0 0;
+    background-color: white;
+    color: red;
+}
+
+/*banner slide*/
+.banner { 
+    width: 100%;
+    height: 1080px;
+    margin-top: 94px;
+    position: relative; 
+    overflow: hidden;
+}
+.banner ul { 
+    list-style: none; 
+    padding: 0;
+}
+.banner ul li { 
+    float: left; 
+/*    background-size:150px 150px;*/
+    height:580px;
+    width: 100%;
+}
+.banner div.slide_caption {
+	background: rgba(0, 0, 0, 0.0);
+    max-width: 600px;
+    margin: 120px auto auto auto;
+}
+.banner div.slide_caption h1 ,
+.banner div.slide_caption p {
+    background: none ;
+    text-align: center;
+    color: #fff;
+    line-height: 2em;
+    text-shadow: 1px 1px 5px rgba(150, 150, 150, 1);
+}
+.banner div.slide_caption h1 {
+    font-size: 32px;
+    margin: 0;
+}
+.banner div.slide_caption p {
+    font-size: 16px;
+}
+.templatemo_banner_slide_01 {
+    background: url('../images/templatemo_banner_slide_01.jpg');
+    background-repeat:no-repeat;
+        background-size:100% 100%;
+        -moz-background-size:100% 100%;
+        -webkit-background-size:100% 100%;
+        -o-background-size:100% 100%;
+}
+.templatemo_banner_slide_02 {
+    background: url('../images/blackboard.png');
+    background-repeat:no-repeat;
+    background-size:800px 350px;
+    -moz-background-size:800px 350px;
+    -webkit-background-size:800px 350px;
+    -o-background-size:800px 350px;
+}
+.templatemo_banner_slide_03 {
+    background: url('../images/qipan.png');
+    background-repeat:no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+/*about our organization*/
+#templatemo_about {
+    background: #ffffff;
+    float: left;
+}
+
+#templatemo_class {
+    background: #ffffff;
+    float: left;
+}
+#templatemo_about .about_icon img {
+    width: 100%;
+}
+#templatemo_about .about_icon h2 {
+    text-align: center;
+    font: normal normal normal 20px/25px 'SimSun', SimSun;
+}
+#templatemo_about .about_icon .imgwap {
+    text-align: center;
+    border-radius: 0px;
+}
+#templatemo_about .about_icon p {
+    text-align: center;
+    font: normal normal normal 14px/23px 'SimSun', SimSun;
+}
+#templatemo_about .mission {
+    /*background-color: #bd3e25;*/
+    background: url('../images/11.svg');
+    background-size: 100% 100%;
+    color: #f5bd48;
+}
+#templatemo_about .product {
+    /*background-color: #334d5c;*/
+    background: url('../images/44.svg');
+    background-size:cover;
+    color: #f5bd48;
+}
+#templatemo_about .testimonial {
+   /* background-color: #efc84a;*/
+    background: url('../images/33.svg');
+        background-size: 100% 100%;
+    color: #ab4921;
+}
+#templatemo_about .statistic {
+    /*background-color: #334d5c;*/
+    background: url('../images/22.svg');
+    background-size: 100% 100%;
+    color: #efc84a;
+}
+#templatemo_about #testimonial_text_wap {
+    overflow: hidden;
+}
+#templatemo_about #testimonial_text_wap h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 12px 0;
+}
+#templatemo_about #testimonial_text_wap h3 {
+    font-size: 20px;
+    margin: 0;
+    padding: 12px 0;
+}
+#templatemo_about #testimonial_text_wap img {
+    margin-bottom: 20px ;
+}
+#templatemo_about #testimonial_text_wap p {
+    font-size: 14px;
+    line-height: 2em;
+}
+#templatemo_about .testimonial_text {
+    width: 100%;
+    float: left;
+}
+#templatemo_about .pre_next {
+    font-size: 70px;
+    top: 50%;
+    margin-top: -35px;
+    position: absolute;
+}
+#templatemo_about .pre_next a {
+    color: #6698b5;
+    float: left;
+}
+/*#templatemo_about .pre_next a:hover {
+    color: #334d5c;
+}*/
+#templatemo_about #testimonial_text_wap h1 {
+    font-size: 70px;
+    top: 50%;
+    margin-top: -35px;
+}
+#templatemo_about .testimonial_top_bottom_spacer {
+    padding-bottom: 80px;
+}
+/*events*/
+#templatemo_events {
+    background: #ffffff;
+    float: left;
+    overflow: hidden;
+}
+#templatemo_events h1{
+    color: #fff;
+}
+#templatemo_events .event_box_wap {
+    overflow:hidden;
+    margin-bottom: 30px;
+    cursor: pointer;
+    position: relative;
+}
+#templatemo_events .event_box_wap .event_box_img {
+    position: relative;
+    top: 0;
+}
+#templatemo_events .event_box_wap .event_box_caption {
+    position: relative;
+    top: 0;
+    padding-bottom: 10px;
+    background: #fff;
+    width: 100%;
+    border-top: 3px solid #3c6f8c;
+}
+#templatemo_events .event_box_wap h1,
+#templatemo_events .event_box_wap p {
+    margin: 0;
+    color: #000000;
+    text-align: left;
+}
+#templatemo_events .event_box_wap p {
+    padding: 5px 20px 15px 20px;
+}
+#templatemo_events .event_box_wap h1 {
+    padding: 20px 20px 20px 20px;
+    font-size: 24px;
+    line-height: 24px;
+}
+/*timeline*/
+#templatemo_timeline {
+    background: #fff;
+    float: left;
+}
+#templatemo_timeline .container-fluid {
+    max-width: 1600px;
+    position: absolute;
+    margin: auto;
+    margin-bottom: 80px;
+    background: url("../images/time_line_bg.jpg") repeat-y center top;
+}
+#templatemo_timeline .time_line_wap {
+    position: absolute;
+    display: none;
+}
+#templatemo_timeline .time_line_caption {
+    background: rgb(173,235,255);
+    padding: 10px 20px 10px 20px ;
+    border-radius: 10px;
+    border-style:double;
+    height: 40px;
+    clear: both;
+    color: #fff; 
+}
+#templatemo_timeline .time_line_paragraph {
+    background: #e6e6e6;
+    padding: 5px;
+    border-radius: 7px;
+    width: 65%;
+    margin-top: 50px;
+    font-family: 'SimSun', SimSun;
+}
+#templatemo_timeline .time_line_paragraph a {
+    color: #000;
+    text-decoration: underline;
+}
+#templatemo_timeline .left_timeline {
+    margin-left: 30px;
+}
+#templatemo_timeline .left_timeline .time_line_caption {
+    float: right;
+    margin-right: 0px;
+}
+#templatemo_timeline .right_timeline .time_line_caption {
+    float: left;
+}
+#templatemo_timeline .time_line_paragraph h1 {
+    text-align: left;
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000;
+    padding: 20px 20px 20px 20px;
+}
+#templatemo_timeline .time_line_paragraph p {
+/*    padding: 0px 20px 20px 20px;*/
+/*    text-align: left;
+    margin: 0;
+    font-size: 14px;
+    line-height: 2em;
+    color: #000;*/
+}
+#templatemo_timeline .left_timer {
+    float: right;
+    background: url("/view/images/arrow_left.png") 0 5px;
+}
+#templatemo_timeline .right_timer {
+    float: left;
+    background: url("/view/images/arrow_right.png") 0px 5px;
+}
+#templatemo_timeline .left_timer ,
+#templatemo_timeline .right_timer {
+    padding-left:30px;
+    width: 101px;
+    position: absolute;
+}
+#templatemo_timeline .left_timer span,
+#templatemo_timeline .right_timer span {
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    background: #e6e6e6;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    padding-top: 3px;
+    margin-top: 3px;
+}
+/*contact*/
+#templatemo_contact {
+    background: #ffffff;
+    float: left;
+}
+#templatemo_contact h1 {
+    color: #fff;
+}
+#templatemo_contact h2 {
+    font-size: 24px;
+    color: #fff;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+#templatemo_contact_map {
+    width: 100%;
+    height: 320px;
+    float: left;
+    margin-bottom: 40px;
+}
+#templatemo_contact ul li a {
+    background: none;
+}
+#templatemo_contact ul li a i {
+    width: 60px;
+    padding: 20px 0;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+#templatemo_contact p {
+    color: #fff;
+    line-height: 30px;
+}
+
+/*templatemo_footer*/
+#templatemo_footer {
+    width: 100%;
+    border-top: 2px solid #507f9a;
+    height: 70px;
+    background: #447693;
+    float: left;
+}
+#templatemo_footer p {
+    padding-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+#templatemo_footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+/*  Small devices (tablets, 768px and up)  */
+@media (max-width: 768px ) { 
+    #templatemo_about .pre_next {
+        font-size: 15px;
+    }
+    #templatemo_timeline .right_timer {
+        background-position: center center;
+    }
+}
+/*  Medium devices (desktops, 992px and up)  */
+@media (max-width: 970px ) {
+    #templatemo_timeline .right_timer {
+        background-position: 100px 5px;
+    }
+    #templatemo_banner_menu #logo_text {
+        font: normal normal normal 30px/1em 'SimSun', SimSun;
+    }
+}
+/*  Large devices (large desktops, 1200px and up)  */
+@media (min-width: 1200px ) {
+}
+
+.wy-mod-banner .focus{width:960px;margin:0px auto;text-align: center;}
+.wy-mod-banner .focus a{text-decoration: none;z-index:3;width:24px;height:34px;position:relative;display: inline-block;*display:inline;overflow: hidden;margin:0px 3px;zoom:1;}
+.wy-mod-banner .focus a .bg-m{z-index:4;color:white;line-height:40px;font-size:40px;position:absolute;display: block;left:2px;top:6px;cursor:pointer; display: none;}
+.wy-mod-banner .focus a .bg-b{background-image:url(../images/img/i_dot.32.png);position:absolute;display: block;left:0px;top:0px;cursor:pointer; width: 18px; height: 18px;}
+.wy-mod-banner .focus a .inner{background-image:url(../images/img/i_dot_hover.32.png);position:absolute;left:0px;top:0px;z-index:9;opacity:0;display: none\0;+display: none;*display: none; width: 18px;height: 18px;}
+.wy-mod-banner .focus a.on .inner,.wy-mod-banner .focus a:hover .inner{cursor:pointer;display:block;border:0;-webkit-transition:opacity .3s ease-in-out;-ms-transition:opacity .3s ease-in-out;transition:opacity .3s ease-in-out;opacity:1;}
+.wy-mod-banner .focus .hover .inner{display:block;}
+
+.wy-mod-banner_title .focus_title{width:960px;margin:0px auto;text-align: center;}
+.wy-mod-banner_title .focus_title a{text-decoration: none;z-index:3;width:24px;height:34px;position:relative;display: inline-block;*display:inline;overflow: hidden;margin:0px 3px;zoom:1;}
+.wy-mod-banner_title .focus_title a .bg-m{z-index:4;color:white;line-height:40px;font-size:40px;position:absolute;display: block;left:2px;top:6px;cursor:pointer; display: none;}
+.wy-mod-banner_title .focus_title a .bg-b{background-image:url(../images/img/i_dot.32.png);position:absolute;display: block;left:0px;top:0px;cursor:pointer; width: 18px; height: 18px;}
+.wy-mod-banner_title .focus_title a .inner{background-image:url(../images/img/i_dot_hover.32.png);position:absolute;left:0px;top:0px;z-index:9;opacity:0;display: none\0;+display: none;*display: none; width: 18px;height: 18px;}
+.wy-mod-banner_title .focus_title a.on .inner,.wy-mod-banner .focus a:hover .inner{cursor:pointer;display:block;border:0;-webkit-transition:opacity .3s ease-in-out;-ms-transition:opacity .3s ease-in-out;transition:opacity .3s ease-in-out;opacity:1;}
+.wy-mod-banner_title .focus_title .hover .inner{display:block;}
+
+
+/*登陆相关CSS*/
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, code, del, dfn, em, img, strong, dd, dl, dt, li, ol, ul, fieldset, form, label, button, input, table, caption, tbody, tfoot, thead, tr, th, td, menu {
+    margin:0;
+    padding:0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display:block
+}
+audio, canvas, video {
+    display:inline-block;
+*display:inline;
+*zoom:1
+}
+audio:not([controls]) {
+display:none
+}/* 代码整理：懒人之家 www.lanrenzhijia.com */
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+    empty-cells:show
+}
+ol, ul, menu {
+    list-style:none
+}
+img {
+    border:0
+}
+a:focus {
+    outline:none
+}
+em, i {
+    font-style: normal;
+}
+button, input, select, textarea {
+    font-size:100%;
+    margin:0;
+    vertical-align:-3px;
+    outline:none;
+}
+button, input {
+    border:1px solid;
+    outline:none;
+    line-height:normal;
+*overflow:visible
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+border:0;
+padding:0
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor:pointer;
+    -webkit-appearance:button
+}
+input[type="search"] {
+    -webkit-appearance:textfield;
+    -webkit-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    box-sizing:content-box
+}
+input[type="search"]::-webkit-search-decoration {
+-webkit-appearance:none
+}
+textarea {
+    overflow:auto;
+    vertical-align:top
+}
+::selection {
+background:#72d0eb;
+color:#fff;
+text-shadow:none
+}
+::-moz-selection {
+background:#72d0eb;
+color:#fff;
+text-shadow:none
+}
+*[hidden] {
+    display:none
+}
+a {
+    color:#0088DB;
+    text-decoration:none;
+    cursor:pointer
+}
+a:hover {
+    color:#2A5E8E
+}
+.clearfix:after, .central:after, .widget ul:after, .paging:after, .pagenav:after, .base-tit:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden
+}
+.clearfix, .central, .widget ul, .paging, .pagenav, .base-tit {
+*+height:1%;
+}
+body, button, input, select, textarea, code {
+    font-size:12px;
+    font-family:microsoft yahei;
+    color: #444;
+}
+/*window*/
+
+
+/* input */
+.ipt {
+    border: solid 1px #d2d2d2;
+    border-left-color: #ccc;
+    border-top-color: #ccc;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 0 #f8f8f8;
+    background-color: #fff;
+    padding: 4px 6px;
+    height: 21px;
+    line-height: 21px;
+    color: #555;
+    width: 180px;
+    vertical-align: baseline;
+}
+.ipt-mini {
+    width: 140px;
+    padding: 1px 3px;
+}
+.ipt:focus {
+    border-color: #95C8F1;
+    box-shadow: 0 0 4px #95C8F1;
+}
+/* btn */
+.btn {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: bold;
+    height: 27px;
+    line-height: 27px;
+    min-width: 52px;
+    padding: 0 12px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    color: #666;
+    background-color: #f5f5f5;
+    background: -webkit-linear-gradient(top, #F5F5F5, #F1F1F1);
+    background: -moz-linear-gradient(top, #F5F5F5, #F1F1F1);
+    background: linear-gradient(top, #F5F5F5, #F1F1F1);
+}
+input.btn {
+    height: 29px;
+}
+.btn:hover {
+    border-color:#c6c6c6;
+    color:#333;
+    background-color:#f8f8f8;
+    background:-webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+    background:-moz-linear-gradient(top, #f8f8f8, #f1f1f1);
+    background:linear-gradient(top, #f8f8f8, #f1f1f1);
+    box-shadow:#ddd 0 1px 1px 0;
+}
+.btn:active, .btn.btn-active {
+    box-shadow:#ddd 0 1px 2px 0 inset;
+    border-color:#c6c6c6;
+}
+.btn:focus {
+    border-color:#4d90fe;
+    outline:none
+}
+.btn-primary {
+    border-color: #3079ED;
+    color: #F3F7FC;
+    background-color: #4D90FE;
+    background: -webkit-linear-gradient(top, #4D90FE, #4787ED);
+    background: -moz-linear-gradient(top, #4D90FE, #4787ED);
+    background: linear-gradient(top, #4D90FE, #4787ED);
+}
+.btn-primary:hover {
+    border-color:#2F5BB7;
+    color:#fff;
+    background-color: #4D90FE;
+    background: -webkit-linear-gradient(top, #4D90FE, #357AE8);
+    background: -moz-linear-gradient(top, #4D90FE, #357AE8);
+    background: linear-gradient(top, #4D90FE, #357AE8);
+}
+.btn-primary:active, .btn-primary.btn-active {
+    box-shadow:#2176D3 0 1px 2px 0 inset;
+    border-color: #3079ED;
+}
+.btn-primary:focus {
+    border-color:#4d90fe;
+    outline:none
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+.theme-buy {
+    margin-top:10%;
+    text-align: center;
+}
+.theme-gobuy, .theme-signin {
+    font-size: 15px;
+}
+.theme-price {
+    position: relative;
+    bottom: -6px;
+    font-family: microsoft yahei, Arial, Helvetica, sans-serif;
+    margin-right: 20px;
+    font-weight: bold;
+    color: #f60;
+    line-height: 32px;
+    font-size: 24px;
+    display: inline-block;
+}
+.theme-price dfn {
+    font-style: normal;
+    font-size: 18px;
+    margin-right: 2px;
+}
+.theme-desc {
+    padding: 30px;
+}
+.theme-version {
+    padding: 30px;
+}
+.theme-popover-mask {
+    z-index: 9998;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0.4;
+    filter:alpha(opacity=40);
+    display:none
+}
+.theme-popover {
+    z-index:9999;
+    position:fixed;
+    top:50%;
+    left:50%;
+    width:660px;
+    height:350px;
+    margin:-180px 0 0 -330px;
+    border-radius:5px;
+    border:solid 2px #666;
+    background-color:#fff;
+    display:none;
+    box-shadow: 0 0 10px #666;
+}
+.theme-poptit {
+    border-bottom:1px solid #ddd;
+    padding:12px;
+    position: relative;
+}
+.theme-popbod {
+    padding:60px 15px;
+    color:#444;
+    height: 148px;
+}
+.theme-popbom {
+    padding:15px;
+    background-color:#f6f6f6;
+    border-top:1px solid #ddd;
+    border-radius:0 0 5px 5px;
+    color:#666
+}
+.theme-popbom a {
+    margin-left:8px
+}
+.theme-poptit .close {
+    float:right;
+    color:black;
+    padding:5px;
+    margin:-2px -5px -5px;
+    font:bold 14px/14px simsun;
+    text-shadow:0 1px 0 #ddd
+}
+.theme-poptit .close:hover {
+    color:black;
+}
+.btn.theme-reg {
+    position: absolute;
+    top: 8px;
+    left: 43%;
+    display: none
+}
+.inp-gray, .feed-mail-inp {
+    border:1px solid #ccc;
+    background-color:#fdfdfd;
+    width:220px;
+    height:16px;
+    padding:4px;
+    color:#444;
+    margin-right:6px
+}
+.dform {
+    padding:80px 60px 40px;
+    text-align: center;
+}
+.dform .ipt_error {
+    background-color:#FFFFCC;
+    border-color:#FFCC66
+}
+.dform-tip {
+    display:none;
+    background-color:#080;
+    color:#fff;
+    line-height:42px;
+    margin-top:10px;
+display:;
+    font-size: 14px;
+}
+.dform-tip-errer {
+    background-color: #CF301A;
+}
+.dform-tip a {
+    display: inline-block;
+    padding: 0 20px;
+    margin-left:10px;
+    background-color: #FFE924;
+    color: #CF301A;
+}
+.dform-login {
+    padding:0;
+    height: 270px;
+    overflow: hidden;
+}
+.dform-login iframe {
+    height: 470px;
+    margin-top: -180px;
+}
+.theme-signin {
+    text-align:left;
+    font-size: 14px;
+}
+.theme-signin h4 {
+    color:#999;
+    font-weight:100;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.theme-signin li {
+    padding-left: 40px;
+    margin-bottom: 15px;
+}
+.theme-signin li strong {
+    float: left;
+    margin-left: -8px0px;
+    width: 80px;
+    text-align: right;
+    line-height: 32px;
+}
+.theme-signin .btn {
+    margin-bottom: 10px;
+}
+.theme-signin p {
+    font-size: 12px;
+    color: #999;
+}
+.theme-desc, .theme-version {
+    padding-top: 0
+}
+
+/*自定义*/
+a {
+    text-decoration: none;
+}
+
+.gywm_1{
+    text-align: center;
+    font: normal normal normal 18px/23px 'SimSun', SimSun;
+}
+
+.gywm_2{
+    text-align: center;
+    padding-top: 12px;
+    font: normal normal normal 18px/14px 'SimSun', SimSun;
+}
+
+ol, ul, menu {
+    list-style:none;
+}

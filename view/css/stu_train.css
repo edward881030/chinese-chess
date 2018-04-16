@@ -1,0 +1,34 @@
+#xuanxiang ul li a:hover,
+#xuanxiang ul li a#sklb
+{
+    background-color: rgb(82,170,231);
+}
+
+table.gridtable {
+	font-family: verdana,arial,SimSun;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+table.gridtable th {
+	border-width: 1px;
+	font: normal normal normal 18px/23px "SimSun", SimSun;
+	padding: 3px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: rgb(82,170,231);
+	width :130px;
+	text-align: center;
+}
+table.gridtable td {
+	border-width: 1px;
+	width:170px;
+	font: normal normal normal 18px/23px "SimSun", SimSun;
+	padding: 3px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+	width :130px;
+	text-align: center;
+}

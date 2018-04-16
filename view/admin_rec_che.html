@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>楚河棋院—在线课堂</title>
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- CSS -->
+	<link href="/view/css/admin_rec_che.css"          rel="stylesheet">
+	<link href="/view/css/common/word.css"          rel="stylesheet">    
+	<link href="/view/css/common/bootstrap.min.css" rel="stylesheet">
+  	<!-- JS -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>  
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/admin_rec_che.js"></script>
+</head>
+<body style="background-image: url(/view/images/chess_desk_bg.jpg);">
+    <div class="container-fluid" style="margin-top:0px;">
+   		<div class="row" >
+   			<div class="col-md-3" style="text-align:left;border:0px solid;">
+   				<div class="row" >
+	   				<div style="margin-top:150px; ">
+						<a href="/view/admin_info.php"><span class="span_sty" style="color:white;">返回管理中心</span></a>
+					</div>
+				</div>
+			   	<div class="row" >
+	   				<div style="margin-top:10px; ">
+						</label><span class="span_sty_1">级别分类:</span></label>
+						<select id="jbfl">
+							<option value ="零基础"><span class="span_sty">零基础</span></option>
+							<option value ="入门"><span class="span_sty">入门</span></option>
+							<option value ="提高"><span class="span_sty">提高</span></option>
+							<option value ="进阶"><span class="span_sty">进阶</span></option>
+							<option value ="职业化"><span class="span_sty">职业化</span></option>
+						</select>
+					</div>
+
+				</div>
+				<div class="row" >
+	   				<div style="margin-top:10px; ">
+						</label><span class="span_sty_1">训练类型:</span></label>
+						<select id="xllx">
+							<option value ="经典残局"><span class="span_sty">经典残局</span></option>
+							<option value ="一步杀"><span class="span_sty">一步杀</span></option>
+							<option value ="二步杀"><span class="span_sty">二步杀</span></option>
+							<option value ="三步杀"><span class="span_sty">三步杀</span></option>
+							<option value ="象棋定式"><span class="span_sty">象棋定式</span></option>
+						</select>
+					</div>
+				</div>
+				<div class="row" >
+	   				<div style="margin-top:10px; ">
+						</label><span class="span_sty_1">棋谱名称:</span><input id="qpmc" type="text" ></input></label>
+					</div>
+				</div>
+				<div class="row" style="margin-top:10px;" style="border:0px solid;">
+   					<div class="col-md-6" >
+					<button type="button" id="kslz" onclick="chess_player_obj.start_record();">	开始录制</button>
+					</div>
+					<div class="col-md-6" >
+					<button type="button" id="tzlz" onclick="chess_player_obj.restart_record();">停止录制</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12"  style="margin-top:10px;">
+					<button type="button" id="bcwc" onclick="chess_player_obj.store_record();">	完成保存</button>
+					</div>
+				</div>
+   			</div>
+   			<div class="col-md-8" style="text-align:center;border:0px solid;">
+				<div class="desk" style="margin-top:30px;">
+					<div style="margin-left:-310px; margin-bottom:5px; color:#ffffff;">
+						<font style="padding-left:40px;">一</font>
+						<font style="padding-left:40px;">二</font>
+						<font style="padding-left:40px;">三</font>
+						<font style="padding-left:40px;">四</font>
+						<font style="padding-left:40px;">五</font>
+						<font style="padding-left:40px;">六</font>
+						<font style="padding-left:40px;">七</font>
+						<font style="padding-left:40px;">八</font>
+						<font style="padding-left:40px;">九</font>
+					</div>
+					<div id = "chessboard" class="chessboard">
+					<table style="position:absolute; left:550px;top:15px;">
+					<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					</tr>
+					<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					</tr>
+					<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					</tr>
+					<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					</tr>		
+					</table>
+					<table style="position:absolute; left:550px; top:310px;">
+					<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					</tr>
+					<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					</tr>
+					<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					</tr>
+					<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					</tr>		
+					</table>	
+					</div>
+					<div style="clear:both"></div>
+					<div style="margin-left:-310px;margin-bottom:5px; color:#ffffff;">
+					<font style="padding-left:40px;">九</font>
+					<font style="padding-left:40px;">八</font>
+					<font style="padding-left:40px;">七</font>
+					<font style="padding-left:40px;">六</font>
+					<font style="padding-left:40px;">五</font>
+					<font style="padding-left:40px;">四</font>
+					<font style="padding-left:40px;">三</font>
+					<font style="padding-left:40px;">二</font>
+					<font style="padding-left:40px;">一</font>
+
+					</div>
+				</div>
+   			</div>
+   		</div>
+    </div>
+<script type="text/javascript">
+$("#kslz").click(function(){
+	$("#kslz").text("正在录制中. . .");
+	$("#kslz").css("color","red");
+	$("#kslz").attr("disabled","disabled");
+});
+
+$("#tzlz").click(function(){
+	$("#kslz").text("开始录制");
+	$("#kslz").css("color","black");
+	$("#kslz").removeAttr("disabled");
+});
+
+$("#bcwc").click(function(){
+	$("#kslz").text("开始录制");
+	$("#kslz").css("color","black");
+	$("#kslz").removeAttr("disabled");
+});
+</script>
+</body>
+</html>

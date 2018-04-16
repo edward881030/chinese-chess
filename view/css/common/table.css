@@ -1,0 +1,58 @@
+table.gridtable {
+    font-family: verdana,arial,SimSun;
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+table.gridtable th {
+    border-width: 1px;
+    font: normal normal normal 18px/23px "SimSun", SimSun;
+    padding: 3px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: rgb(82,170,231);
+}
+table.gridtable td {
+    border-width: 1px;
+    width:170px;
+    font: normal normal normal 18px/23px "SimSun", SimSun;
+    padding: 3px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}
+
+.fee_table{
+    border:1px solid;
+    width :900px;
+}
+.fee_table td
+{
+    text-align: left;
+    border:1px solid;
+    text-align: center;
+    padding-top:5px; padding-bottom:5px;
+}
+.td_s td, p ,label, li
+{
+    color:black;
+    font: normal normal normal 18px/23px 'SimSun', SimSun;
+}
+.xkjl_table td, th
+{
+    vertical-align:middle; text-align:center;
+    color:black;
+    font: normal normal normal 18px/23px 'SimSun', SimSun;
+}
+
+table.table_sty_1 td
+{
+    border-width: 0px;
+    width:270px;
+    color:white;
+    font: normal normal normal 18px/23px "SimSun", SimSun;
+    padding: 3px;
+    border-style: solid;
+    border-color: #666666;
+}

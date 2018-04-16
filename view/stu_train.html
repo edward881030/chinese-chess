@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wb="http://open.weibo.com/wb">
+  <head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>楚河在线棋院</title>
+    <meta name="description" content="象棋在线教学，中国象棋" />
+    <meta name="mr_edward@163.com" content="象棋教学">
+    <!-- CSS -->
+    <link href="css/stu_train.css"           rel="stylesheet"> 
+    <link href="css/common/bootstrap.min.css"  rel="stylesheet">
+    <link href="css/common/word.css"           rel="stylesheet">   
+    <link href="css/common/table.css"           rel="stylesheet">  
+    <!-- JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>	
+    <script src="js/stu_train.js"></script> 
+
+
+<!-- 代码部分begin -->
+</head>
+<body onload="make_person_center_dynamic_part();">
+<div style="width:100%; height:94px; border-bottom:1px solid red;">
+	<div id = "title" style="float:left; margin-top:20px; border:solid 0px;"> 
+	<p  style="margin-left:80px; font-family:KaiTi; font-size:30px; font-weight:bold;">楚河<span style="font-size:21px;">在线棋院</span></p>
+	</div>
+
+</div>
+<div style="clear:both;"></div>
+<div style="border:solid 0px; height:530px; width:100%">
+    <div style="border:solid 0px; width:1200px; margin:auto;"> 
+    <div id= "xuanxiang" style = "float:left; height:320px; width:160px; margin-top:40px; border-right:solid 0px;">
+        <ul class="nav nav-pills nav-stacked">
+           <li>                           <a id="xkjf" href="javascript:;"><img src="images/icon/1v1.svg" style="vertical-align:bottom; height:25px; width:25px;"/><span class="span_sty">1 V 1教学</span></a></li>  
+<!--            <li  style="margin-top:35px; "><a id="gkk" href="javascript:;"><img src="images/icon/gkk.svg" style="vertical-align:bottom; height:25px; width:25px;"><span class="span_sty">名师公开课</span></img></a></li> -->
+           <li  style="margin-top:35px; "><a id="yxkc" href="javascript:;"><img src="images/icon/qp.svg" style="vertical-align:bottom; height:25px; width:25px;"><span class="span_sty">棋谱演练</span></img></a></li>
+           <li  style="margin-top:35px; "><a id="qc" href="javascript:;"><img src="images/icon/qc.svg" style="vertical-align:bottom; height:25px; width:25px;"><span class="span_sty">同窗切磋</span></img></a></li>
+        </ul>
+    </div>
+    <div class="con_page" style="float:left;margin-top:40px; margin-left:40px;height: 520px; width:1000px; border-left:solid 1px; padding-left:50px;">
+        <div id="xkjf_li" style="position:absolute;margin-left:10px;">
+             <table class="table" style="padding-left:50px;>" border=1px; >
+                  <thead>
+                       <tr style="background-color:rgb(82,170,231)">
+                          <th>课程</th>
+                          <th>总需课时</th>
+                          <th>已上课时</th>
+                          <th>总需费用</th>
+                          <th>已付金额</th>
+                          <th>可退金额</th>
+                          <th>上课时间</th>
+                          <th>点击上课</th>
+                       </tr>
+                  </thead>
+                  <tbody id="course_recorder_tbody">
+                 </tbody>
+              </table>
+        </div>
+        <div style="clear:both"></div>
+        <div id="tsk" style="display:none;margin-top:83px; background-color:rgb(247,251, 247);opacity:0.99999;filter:alpha(opacity=99);margin-left:238px;width:662px; height:200px; border:solid 1px;">
+          <div id="tsk_xx" style="height:170px; border:0px solid;">
+
+          </div>
+          <div style="clear:both"></div>
+          <div style="height:30px; border:0px solid;">
+              <p onclick="tsk_fh()" style="margin-left:580px; margin-top:0px; color:black;font:bold 14px/14px 'Century Gothic'; ">返&nbsp;&nbsp;&nbsp;回</p>
+          </div>
+        </div>
+        <div id="yxkc_li" style="position:absolute; display:none">
+           <p style="margin-top:10px;color:red;">敬&nbsp;请&nbsp;期&nbsp;待！</p>
+        </div>
+        <div id="gkk_li" style="position:absolute; width:1000px; display:none">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-4 col-xs-offset-0" style="text-align:left;">
+                <table class="table_sty_1" style="margin-top:10px;">
+                  <tr>
+                    <td><span >本期名师:&nbsp;黄丹青</span></td>
+                  </tr>
+                  <tr>
+                    <td><span >本期内容:&nbsp;棋盘的杀招与定式</span></td>
+                  </tr>
+                  <tr>
+                    <td><span >QQ群&nbsp;&nbsp;:&nbsp;331588509</span></td>
+                  </tr>
+                  <tr>
+                    <td><span >开讲时间:&nbsp;2016/09/21 21:30</span></td>
+                  </tr>
+                  <tr>
+                    <td><span >倒计时&nbsp;:&nbsp;</span><span id="count_down" style="color:red;">3天21小时8秒</span></td>
+                  </tr>
+                  <tr>
+                    <td><button id="djtk" class='btn btn-primary' style="background-color:rgb(82,170,231);padding:2px 5px 2px 5px;"><span class="span_sty">点击听课</span></button></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-xs-3 col-xs-offset-5" style="text-align:left;">
+                <img  src="images/gkk.png">
+              </div>
+            </div>
+            <div class="row" style="margin-top:30px;">
+              <div class="col-xs-7 col-xs-offset-0" style="border:1px solid #96c2f1;background:#f0f0f0;text-align:left;">
+                <div>
+                    <p>
+                        名师简介：
+                    </p>
+                </div>
+                 <div  style="text-align:justify;">
+                    <p style="padding-top:0px;line-height:30px; ">&nbsp;&nbsp;黄丹青，1985年，河南商丘人。十余岁学习中国象棋。
+                                经大师指导,18岁荣获河南省成人象棋锦标赛第三名。并后续再全国象棋大赛上，取得骄人战绩。
+                                黄老师近年从事象棋教育工作，其学生任思成8岁成为“河南省少年赛”冠军； 张婉玉10岁获得“河南省象棋锦标赛”成人组女子冠军。其教学方法与教学
+                                理念得到广大学生及家长的认可。
+                    </p>
+                </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div id="qc_li" style="position:absolute; display:none">
+          <p style="margin-top:10px;color:red;">敬&nbsp;请&nbsp;期&nbsp;待！</p>
+        </div>
+
+    </div>
+  </div>
+</div>
+   <script src="js/user_info_banner.js"></script> 
+   <script src="js/stu_train.js"></script> 
+</body>
+</html> 

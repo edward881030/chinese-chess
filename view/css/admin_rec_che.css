@@ -1,0 +1,28 @@
+﻿.desk {
+		/*position:relative; */
+	}
+
+.chessboard {
+	position:relative;
+	background-image:url(/view/images/chess/bg.png);
+	background-repeat: no-repeat;
+	height:565px; 
+	width:800px; 
+	margin:0px 0px 0px 50px;
+}
+
+.chessboard table
+  {
+  border-collapse:collapse;
+  }
+
+.chessboard td{
+	height:55px;
+	width:50px;
+}
+.chessboard table, .chessboard td, .chessboard th
+  {
+  border-width:1px;
+  border-style:dashed;
+  border-color: grey;
+  }

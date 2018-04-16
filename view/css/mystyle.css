@@ -1,0 +1,15 @@
+
+.ipt {
+        border: solid 1px #d2d2d2;
+        border-left-color: #ccc;
+        border-top-color: #ccc;
+        border-radius: 2px;
+        box-shadow: inset 0 1px 0 #f8f8f8;
+        background-color: #fff;
+        padding: 4px 6px;
+        height: 30px;
+        line-height: 21px;
+        color: #555;
+        width: 250px;
+        vertical-align: baseline;
+}
